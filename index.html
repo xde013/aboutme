@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ryan</title>
+    <link rel="stylesheet" href="https://npmcdn.com/jquery-gray@1.5.0/css/gray.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+     <link 
+      rel="stylesheet" 
+      href="css/prism-atom-dark.css" 
+      type="text/css" 
+      media="screen" 
+    />
+
+  
+    
+
+  </head>
+  <body>
+	<div class="intro" id="about">
+		<img class="circle me" src="images/me.jpg" >
+    <div class="bio">
+      <h1>Ryan Bourhil</h1>
+      <h4 >I'm <span class="sub"></span>..</h4>
+    <p> Ryan is a web developer and Ruby
+        on Rails contributor. Previously, he was 
+        a tech lead at WHERE.com (acquired by 
+        PayPal) and a member of the PayPal/eBay
+        development team in Boston. In a 
+        previous life, he turned a health insurance 
+        quotes generator from a $400/day web 
+        application to a $40,000/day business.</p>
+      </div>
+    </div>
+    <div id="sticky-anchor"></div>
+    <div id="sticky"> 
+      
+      <nav class="">
+    <div class="nav-wrapper">
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down" id="nav">
+        <li class="waves-effect waves-purple"><a href="#about">About</a></li>
+        <li class="waves-effect waves-purple"><a href="#first">Code Snippets</a></li>
+        <li class="waves-effect waves-purple"><a href="#project">Projects</a></li>
+        <li ><a class="purple white-text waves-effect waves-light btn" href="#contact">Contact Me</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+      <li><div class="userView">
+      <img class="background" src="images/office.jpg">
+      <a href="#!user"><img class="circle" src="images/me.jpg"></a>
+      <a href="#!name"><span class="white-text name">Ryan Bourhil</span></a>
+      <a href="#!email"><span class="white-text email">bourhilr@gmail.com</span></a>
+      <li><a class="waves-effect" href="#about">About</a></li>
+      <li><a class="waves-effect" href="#first">Code Snippets</a></li>
+      <li><a class="waves-effect" href="#project">Projects</a></li>
+
+      <li><div class="divider"></div></li>
+      <li ><a class="purple white-text waves-effect waves-light  btn" href="#contact">Contact Me</a></li>
+    </div></li>
+    </div>
+  </nav>
+    </div>
+     
+
+  <div class="head section scrollspy"  id="first">
+  <div class= "col s12 " id="box">
+    <h3>Code Snippets <i class="material-icons ">code</i></h3> 
+    <hr class="devide">
+
+  </div>
+  </div>
+
+  <div class="col s12 ">
+    <div class="row valign-wrapper" >
+      
+      <div class="col s6 valign" id="box" >   
+            <div class="code1"> 
+                <h4>Orbital Periods</h4>
+            <p class="flow-text">
+                This JavaScript program will return a new array that transforms the element's average altitude into their orbital periods knowing that the body being orbited here is Earth.
+            </p>
+            </div>  
+      </div>
+
+      <div class="col s6 valign" id="box">
+            <pre class="card-panel hoverable"><code class="language-javascript">function orbitalPeriod(objects) {
+  const GM = 398600.4418;
+  const earthRadius = 6367.4447;
+  const PI = Math.PI;
+   objects.forEach(function(item) {
+    var tmp = Math.round(2 * PI * Math.sqrt(Math.pow(earthRadius + item.avgAlt, 3) / GM));
+    delete item.avgAlt;
+    item.orbitalPeriod = tmp;
+  });
+   return objects;
+}
+
+orbitalPeriod([{name: &quot;ISS&quot;, avgAlt: 413.6}]) =&gt; [{name: 'ISS', orbitalPeriod: 5557 }]</code></pre>
+      </div>
+        
+</div>
+
+<div class="divider"></div>
+
+
+
+<div class="row valign-wrapper ">
+      <div class="col s6 valign" id="box">
+            <pre class="card-panel hoverable"><code class="language-ruby ">def foobar n
+   (1..n).each do |i|
+      x = ''
+      x &lt;&lt; &quot;Foo&quot; if i % 3 == 0
+      x &lt;&lt; &quot;Bar&quot; if i % 5 == 0
+      puts x.empty? ? i : x
+   end
+end</code></pre>
+      </div>
+      <div class="col s6 valign" id="box">   
+            <div class="code1"> 
+                <h4>FooBar</h4>
+            <p class="flow-text">
+                This Ruby program is an adaptation of a classic technical job interview problem which displays sequences of the Foobar pattern.
+            </p>
+            </div>  
+      </div>
+
+      
+        
+</div>
+
+<div class="divider"></div>
+
+<div class="row valign-wrapper">
+
+      <div class="col s6 valign" id="box">   
+            <div class="code1"> 
+                <h4>Fibonnaci Algorithm</h4>
+            <p class="flow-text">
+                Fibonacci numbers are the numbers in the following integer sequence, called the Fibonacci sequence, and characterized by the fact that every number after the first two is the sum of the two preceding ones.
+            </p>
+            </div>  
+      </div>
+
+      <div class="col s6 valign " id="box">
+            <pre class="card-panel hoverable"><code class="language-ruby">def fibonacci(n)
+   n &lt;= 1 ? n :  fibonacci( n - 1 ) + fibonacci( n - 2 ) 
+end</code></pre>
+      </div>
+        
+</div>
+
+<div class="divider"></div>
+
+<div class="row valign-wrapper">
+      <div class="col s6 valign" id="box">
+            <pre class="card-panel hoverable"><code class="language-ruby">str = &quot;I will drill for a well in Hull.&quot;
+regex = Regexp.new(/\w+ll/)
+
+matchdata = regex.match(str)
+while matchdata != nil
+  puts matchdata[0]
+  str = matchdata.post_match
+  matchdata = regex.match(str)
+end
+</code></pre>
+      </div>
+      <div class="col s6 valign" id="box">   
+            <div class="code1"> 
+                <h4>RegEx</h4>
+            <p class="flow-text">
+                Quick Regular Expressions matching using Ruby's match method
+            </p>
+            </div>  
+      </div>
+
+      
+        
+</div>
+<div class="divider"></div>
+
+ <div class="row ">
+
+      <div class="col s12 " id="cards"> 
+      <div class="col s4 " id="box2">
+          <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/vision.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">My Vision <i class="material-icons">visibility</i><i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">My Vision<i class="material-icons right">close</i></span>
+      <p class="flow-text"> <strong>WORK HARDER, BE BRAVE:</strong> Always trying to work out new ideas that's how I further my knownledge.</p>
+    </div>
+  </div>
+      </div>
+      <div class="col s4 " id="box2">
+          <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/strategy.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">My Mission <i class="material-icons">business_center</i><i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">My Mission<i class="material-icons right">close</i></span>
+      <p class="flow-text"><strong>WITHOUT A GOAL YOU CAN'T SCORE:</strong>  with a 'can do' attitude my goal is to make people-friendly and timeless products.</p>
+    </div>
+  </div>
+      </div>
+      <div class="col s4 " id="box2">
+  <div class="card hoverable">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="images/idea.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">My Idea <i class="material-icons">lightbulb_outline</i><i class="material-icons right">more_vert</i></span>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">My Idea<i class="material-icons right">close</i></span>
+      <p class="flow-text"> <strong>THE BIGGEST RISK IS TO TAKE NO RISK AT ALL:</strong> I go the extra mile and make new things, better than requested.</p>
+    </div>
+  </div>
+      </div>
+      </div>
+        
+    </div>
+    <div class="divider"></div>
+  
+  <div class="section scrollspy" id="project">
+    <div class= "col s12 " id="box">
+            <h3 > My Projects <i class="material-icons">work</i> </h3> 
+            <hr class="devide">
+        
+    </div>
+
+  </div>
+    
+    <div id="projects">
+      <div class="row " >
+        
+      <div class="col s6 "  >   
+             <div class="card sticky-action hoverable ">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/splurty.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Quote Generator<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text purple darken-1">
+                <span class="card-title ">Quote Generator<i class="material-icons right">close</i></span>
+                <p class="flow-text"> A database-powered quote generator with a mobile-first
+                          design, using the Ruby on Rails framework, HTML, and CSS.
+                          Uses Git and GitHub for version control, and launched
+                          on Heroku.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+      </div>
+
+      <div class="col s6"  >   
+             <div class="card sticky-action hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/nomster.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Yelp Clone<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text purple darken-1">
+                <span class="card-title ">Yelp Clone<i class="material-icons right">close</i></span>
+                <p class="flow-text"> A Yelp clone that integrates with the Google Maps API 
+                and includes features like user comments, star ratings,
+                image uploading, and user authentication.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+      </div>
+</div>
+
+  <div class="row" >
+      <div class="col s6 "  >   
+             <div class="card sticky-action hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/todoster.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Single Page Todo Application<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text purple darken-1">
+                <span class="card-title ">Single Page Todo Application<i class="material-icons right">close</i></span>
+                <p class="flow-text"> This single-page to-do application features a
+                fluid user interface that– by using  AngularJS–
+                allows users to rapidly add dynamic content.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+      </div>
+
+      <div class="col s6 "  >   
+             <div class="card sticky-action hoverable">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="images/grammable.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Test Driven Development<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text purple darken-1">
+                <span class="card-title ">Test Driven Development<i class="material-icons right">close</i></span>
+                <p class="flow-text"> An Instagram clone that was built using industry-standard, test-driven
+                development following numerous red/green/refactor cycles.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+          </div>    
+       </div>
+    </div>
+    
+    <div class="divider"></div>
+    <div class="row">
+      <div class="parallax-container">
+        <div class="parallax"><img src="images/parallax.jpg"></div>
+      </div>
+    </div>
+    <div class="row"> 
+      <div class= "col s12 " id="box">
+           <h3>My Instagram <i class="material-icons">camera_enhance</i></h3> 
+             <hr class="devide">
+
+       </div>
+      <div  class="carousel" id="carousel" >
+   
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <div class= "col s12 " id="box">
+           <h3>Skills &amp; Toolbox <i class="material-icons">build</i></h3> 
+           <p class="bio">I developed proficiency and expertise in the following programming languages and comfort with the following tools.</p>
+             <hr class="devide">
+
+    </div>
+    <div class="row" id="skills">
+        <div class="col s2"><img class="grayscale grayscale-fade tooltipped" data-position="left" data-delay="50" data-tooltip="Ruby On Rails" width="100" src="images/rails.png" alt=""></div>
+        <div class="col s2"><img class="grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="GitHub" width="100" src="images/git.png" alt=""></div>
+        <div class="col s2"><img class="grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="MongoDB" width="100" src="images/mongodb.png" alt=""></div>
+        <div class="col s2"><img class="grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="NodeJS" width="100" src="images/node.png" alt=""></div>
+        <div class="col s2"><img class="grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="Bootstrap" width="100" src="images/boot.png" alt=""></div>
+        <div class="col s2"><img class="grayscale grayscale-fade tooltipped" data-position="right" data-delay="50" data-tooltip="Ruby" width="100" src="images/ruby.png" alt=""></div>
+    </div>
+    <div class="row" >
+      <div class="col s9 offset-s3">
+        <div class="col s3"><img class="grayscale grayscale-fade tooltipped" data-position="left" data-delay="50" data-tooltip="HTML5" width="100" src="images/html.png" alt=""></div>
+          <div class="col s3"><img class="grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="JavaScript" width="100" src="images/js.png" alt=""></div>
+          <div class="col s3"><img class="grayscale grayscale-fade tooltipped" data-position="right" data-delay="50" data-tooltip="CSS3" width="100" src="images/css.png" alt=""></div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div class="row white-text purple darken-1 section scrollspy" id="contact" >
+    <div class="row">
+      <div class= "col s12 " id="box">
+           <h3>Contact  <i class="material-icons">message</i></h3> 
+           <p class="bio">I'm very social and I'd love to hear from you! Feel free to send me an email, find me on Linkedin or join me on Facebook. I'm Currently entertaining new opportunities. Please get in touch with me:</p> <br>
+           <p  class="flow-text" ><strong id="email"> bourhilr@gmail.com</strong> <a href="#!"onclick="copyToClipboard()" ><i class="material-icons">content_copy</i></a></p>
+           
+            <hr class="devide">
+    </div>
+    </div>
+    
+    <div class="row" id="links">
+        <div class="col s2" ><a href="https://fb.com/xde013"><img class="hoverable tooltipped" data-position="left" data-delay="50" data-tooltip="Facebook"  src="images/facebook.png" alt=""></a></div>
+          <div class="col s2"><a href="#!"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="Medium"  src="images/medium.png" alt=""></a></div>
+          <div class="col s2"> <a href="#!"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="GitHub"  src="images/github-circle.png" alt=""></a></div>
+          <div class="col s2"><a href="https://instagram.com/hakouara"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="Instagram"  src="images/instagram.png" alt=""></a></div>
+          <div class="col s2"><a href="#!"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="Linkedin"  src="images/linkedin.png" alt=""></a></div>
+          <div class="col s2"><a href="#!"><img class="hoverable tooltipped" data-position="right" data-delay="50" data-tooltip="FreeCodeCamp"  src="images/fire.png" alt=""></a></div>
+      </div>
+    </div>
+
+
+  <footer class="page-footer">
+    <div class="footer-copyright">
+            <div class="container">
+             Copyright © 2016. All right reserved.
+            <a class="grey-text text-lighten-4 right" href="#!">Made by Ryan Bourhil</a>
+            </div>
+    </div>
+  </footer>
+  
+
+
+ 
+ 
+
+        
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/prism.js"></script>
+  <script type="text/javascript" src="js/prism.ruby.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="https://npmcdn.com/jquery-gray@1.5.0/js/jquery.gray.min.js"></script>
+  <script src= "js/instafeed.min.js"></script>
+  <script src="js/custom.js"></script>
+
+
+
+
+  </body>
+</html>
