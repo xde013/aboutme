@@ -46,6 +46,7 @@
         accessToken: '346102260.1677ed0.637fa12e6936404c8816a3585aaa075d',
         target: 'carousel',
         sortBy: 'random',
+        limit: '8',
         template: '<a class="carousel-item" ><img src="{{image}}" /></a>',
         after: function () {
         	$('.carousel').carousel({
