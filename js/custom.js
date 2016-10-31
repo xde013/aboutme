@@ -1,14 +1,15 @@
- function copyToClipboard() {
+
+  $( document ).ready(function(){
+
+    $('#trigger').click(function() {
         var $temp = $("<input>");
         $("body").append($temp);
         $temp.val($('#email').text()).select();
         document.execCommand("copy");
         $temp.remove();
         Materialize.toast('Email copied to Clipboard!', 2000);
-    };
+    });
 
-  
-  $( document ).ready(function(){
   	function sticky_relocate() {
     var window_top = $(window).scrollTop();
     var div_top = $('#sticky-anchor').offset().top;
@@ -45,7 +46,6 @@
         accessToken: '346102260.1677ed0.637fa12e6936404c8816a3585aaa075d',
         target: 'carousel',
         sortBy: 'random',
-        resolution: 'standard_resolution',
         template: '<a class="carousel-item" ><img src="{{image}}" /></a>',
         after: function () {
         	$('.carousel').carousel({
@@ -55,6 +55,4 @@
     });
     feed.run();
     $('.parallax').parallax();
-
-   
   });

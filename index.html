@@ -3,17 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta proprety="og:url" content="https://bryan.getforge.io" />
+    <meta proprety="og:title" content="Ryan Bourhil" />
+    <meta proprety="og:description" content="My personal About me page" />
+    <meta proprety="og:image" content="images/parallax.jpg"/>
+
     <title>Ryan</title>
     <link rel="stylesheet" href="https://npmcdn.com/jquery-gray@1.5.0/css/gray.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
      <link 
       rel="stylesheet" 
-      href="css/prism-atom-dark.css" 
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism-okaidia.css" 
       type="text/css" 
       media="screen" 
     />
+    <link rel="stylesheet" href="css/master.min.css" media="screen" title="no title">
 
   
     
@@ -41,8 +47,7 @@
         <li ><a class="purple white-text waves-effect waves-light btn" href="#contact">Contact Me</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
-      <li><div class="userView">
-      <img class="background" src="images/office.jpg">
+      <li><div class="userView purple darken-4">
       <a href="#!user"><img class="circle" src="images/me.jpg"></a>
       <a href="#!name"><span class="white-text name">Ryan Bourhil</span></a>
       <a href="#!email"><span class="white-text email">bourhilr@gmail.com</span></a>
@@ -238,7 +243,7 @@ end
         
       <div class="col s6 "  >   
              <div class="card sticky-action hoverable ">
-              <div class="card-image waves-effect waves-block waves-light">
+              <div class="card-image waves-effect waves-block waves-purple">
                 <img class="activator" src="images/splurty.png">
               </div>
               <div class="card-content">
@@ -260,7 +265,7 @@ end
 
       <div class="col s6"  >   
              <div class="card sticky-action hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
+              <div class="card-image waves-effect waves-block waves-purple">
                 <img class="activator" src="images/nomster.png">
               </div>
               <div class="card-content">
@@ -283,7 +288,7 @@ end
   <div class="row" >
       <div class="col s6 "  >   
              <div class="card sticky-action hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
+              <div class="card-image waves-effect waves-block waves-purple">
                 <img class="activator" src="images/todoster.png">
               </div>
               <div class="card-content">
@@ -304,7 +309,7 @@ end
 
       <div class="col s6 "  >   
              <div class="card sticky-action hoverable">
-              <div class="card-image waves-effect waves-block waves-light">
+              <div class="card-image waves-effect waves-block waves-purple">
                 <img class="activator" src="images/grammable.png">
               </div>
               <div class="card-content">
@@ -401,46 +406,40 @@ end
       <div class= "col s12 " id="box">
            <h3>Contact  <i class="material-icons">message</i></h3> 
            <p class="bio">I'm very social and I'd love to hear from you! Feel free to send me an email, find me on Linkedin or join me on Facebook. I'm Currently entertaining new opportunities. Please get in touch with me:</p> <br>
-           <p  class="flow-text" ><strong id="email"> bourhilr@gmail.com</strong> <a href="#!"onclick="copyToClipboard()" ><i class="material-icons">content_copy</i></a></p>
+           <p id="trigger" class="flow-text" ><strong id="email"> bourhilr@gmail.com</strong> <a href="#!" ><i class="material-icons">content_copy</i></a></p>
            
             <hr class="devide">
     </div>
     </div>
     
     <div class="row" id="links">
-        <div class="col s2" ><a href="https://fb.com/xde013"><img class="hoverable tooltipped" data-position="left" data-delay="50" data-tooltip="Facebook"  src="images/facebook.png" alt=""></a></div>
+        <div class="col s2" ><a href="https://fb.com/xde013" target="_blank"><img class="hoverable tooltipped" data-position="left" data-delay="50" data-tooltip="Facebook"  src="images/facebook.png" alt="" ></a></div>
           <div class="col s2"><a href="#!"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="Medium"  src="images/medium.png" alt=""></a></div>
           <div class="col s2"> <a href="#!"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="GitHub"  src="images/github-circle.png" alt=""></a></div>
-          <div class="col s2"><a href="https://instagram.com/hakouara"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="Instagram"  src="images/instagram.png" alt=""></a></div>
+          <div class="col s2"><a href="https://instagram.com/hakouara" target="_blank"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="Instagram"  src="images/instagram.png" alt=""></a></div>
           <div class="col s2"><a href="#!"><img class="hoverable tooltipped" data-position="top" data-delay="50" data-tooltip="Linkedin"  src="images/linkedin.png" alt=""></a></div>
           <div class="col s2"><a href="#!"><img class="hoverable tooltipped" data-position="right" data-delay="50" data-tooltip="FreeCodeCamp"  src="images/fire.png" alt=""></a></div>
       </div>
     </div>
 
-
   <footer class="page-footer">
     <div class="footer-copyright">
             <div class="container">
              Copyright © 2016. All right reserved.
-            <a class="grey-text text-lighten-4 right" href="#!">Made by Ryan Bourhil</a>
+            <a class="grey-text text-lighten-4 right" href="https://fb.com/xde013" target="_blank">Crafted by Ryan Bourhil</a>
             </div>
     </div>
   </footer>
   
-
-
- 
- 
-
         
 	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-  <script type="text/javascript" src="js/prism.js"></script>
-  <script type="text/javascript" src="js/prism.ruby.js"></script>
-  <script src="js/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-ruby.js"></script>
   <script src="https://npmcdn.com/jquery-gray@1.5.0/js/jquery.gray.min.js"></script>
-  <script src= "js/instafeed.min.js"></script>
-  <script src="js/custom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+  <script src="js/custom.min.js"></script>
 
 
 
