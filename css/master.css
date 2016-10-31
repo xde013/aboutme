@@ -98,11 +98,11 @@ div.parallax-container {
     height: 300px;
 }
 #skills {
-  text-align: center;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 5%;
+    margin-bottom: 2%;
 }
 #skills1 {
   padding-left: 20%;
@@ -123,6 +123,9 @@ div.parallax-container {
   padding-top: 5%;
   padding-bottom: 5%;
   margin-top: 1px;
+}
+#tools {
+  padding: 5%;
 }
 
 
