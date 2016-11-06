@@ -25,9 +25,7 @@ jQuery(document).ready(function($) {
         shuffle: true,
   });
 
-  $(".button-collapse").sideNav({
-  menuWidth: 350
- });
+  $(".button-collapse").sideNav();
 
  function sticky() {
     var window_top = $(window).scrollTop();
