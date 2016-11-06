@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta proprety="og:url" content="https://bryan.getforge.io" />
+    <meta proprety="og:title" content="Ryan Bourhil" />
+    <meta proprety="og:description" content="My personal About me page" />
+    <meta proprety="og:image" content="images/parallax.jpg"/>
+		<title>Ryan</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/themes/prism-okaidia.css"
+			type="text/css"
+			media="screen"
+			/>
+			<link rel="stylesheet" href="https://npmcdn.com/jquery-gray@1.5.0/css/gray.min.css">
+			<link rel="stylesheet" href="test.css"> 	
+
+		</head>
+		<body>
+			<div class="row valign-wrapper scrollspy" id="about">
+				<div class="col s12 m6 offset-m3 valign" >
+					<img class="circle me" src="images/me.jpg" >
+					<h1 >Ryan Bourhil</h1>
+					<h4 >I'm <span class="sub"></span></h4>
+					<p>
+						I enjoy working on new technologies and create interesting stuff that matters, I've been coding for while now focusing mainly on frontend developpement and hybrid mobile app developpement. I'm an amateur guitarist and a ferocious runner in the sparetime and I like to gaze at the milky way at night.
+					</p>
+				</div>
+			</div>
+			<div id="sticky-anchor"></div>
+			
+			<nav id="sticky">
+				<div class="nav-wrapper">
+					<a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down" id="nav">
+						<li class="waves-effect waves-purple"><a href="#about">About</a></li>
+						<li class="waves-effect waves-purple"><a href="#code">Code Snippets</a></li>
+						<li class="waves-effect waves-purple"><a href="#project">Projects</a></li>
+						<li ><a class="purple white-text waves-effect waves-light btn" href="#contact">Contact Me</a></li>
+					</ul>
+					<ul class="side-nav" id="mobile-demo">
+						<li><div class="userView purple darken-4">
+							<a href="#!user"><img class="circle" src="images/me.jpg"></a>
+							<a href="#!name"><span class="white-text name">Ryan Bourhil</span></a>
+							<a href="#!email"><span class="white-text email">bourhilr@gmail.com</span></a>
+							<li><a class="waves-effect" href="#about">About</a></li>
+							<li><a class="waves-effect" href="#code">Code Snippets</a></li>
+							<li><a class="waves-effect" href="#project">Projects</a></li>
+							<li><div class="divider"></div></li>
+							<li ><a class="purple white-text waves-effect waves-light  btn" href="#contact">Contact Me</a></li>
+						</div></li>
+					</div>
+				</nav>
+				<div class="scrollspy" id="code"></div>
+				<div class="row valign-wrapper scrollspy" id="title">
+					<div class="col s12 m6 offset-m3 valign" >
+						<h3 class="center-align">Code Snippets <i class="material-icons " >code</i></h3>
+						<hr class="divide" >
+					</div>
+				</div>
+				<div class="row valign-wrapper" id="snippet">
+					<div class="col s6	valign" id="snippet-box">
+						<pre class="card-panel hoverable"><code class="language-ruby ">def foobar n
+   (1..n).each do |i|
+      x = ''
+      x &lt;&lt; &quot;Foo&quot; if i % 3 == 0
+      x &lt;&lt; &quot;Bar&quot; if i % 5 == 0
+      puts x.empty? ? i : x
+   end
+end</code></pre>
+					</div>
+					<div class="col s6 valign" id="snippet-box">
+						<h4 class="center-align">FooBar</h4>
+						<p class="flow-text center-align">
+							This Ruby program is an adaptation of a classic technical job interview problem which displays sequences of the Foobar pattern.
+						</p>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row valign-wrapper" id="snippet">
+					<div class="col s6 valign" id="snippet-box">
+						<h4 class="center-align">Fibonnaci Algorithm</h4>
+						<p class="flow-text center-align">
+							Fibonacci numbers are the numbers in the following integer sequence, called the Fibonacci sequence, and characterized by the fact that every number after the first two is the sum of the two preceding ones.
+						</p>
+					</div>
+					<div class="col s6	 valign" id="snippet-box">
+						<pre class="card-panel hoverable"><code class="language-ruby">def fibonacci(n)
+   n &lt;= 1 ? n :  fibonacci( n - 1 ) + fibonacci( n - 2 ) 
+end</code></pre>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row valign-wrapper" id="snippet">
+					<div class="col s6 valign" id="snippet-box">
+						<pre class="card-panel hoverable"><code class="language-javascript">function orbitalPeriod(objects) {
+  const GM = 398600.4418;
+  const earthRadius = 6367.4447;
+  const PI = Math.PI;
+   objects.forEach(function(item) {
+    var tmp = Math.round(2 * PI * Math.sqrt(Math.pow(earthRadius + item.avgAlt, 3) / GM));
+    delete item.avgAlt;
+    item.orbitalPeriod = tmp;
+  });
+   return objects;
+}
+
+orbitalPeriod([{name: &quot;ISS&quot;, avgAlt: 413.6}]) =&gt; [{name: 'ISS', orbitalPeriod: 5557 }]</code></pre>
+					</div>
+					<div class="col s6 valign" id="snippet-box">
+						<h4 class="center-align">Orbital Periods</h4>
+						<p class="flow-text center-align">
+							This JavaScript program will return a new array that transforms the element's average altitude into their orbital periods knowing that the body being orbited here is Earth.
+						</p>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row valign-wrapper" id="snippet">
+					<div class="col s6 valign" id="snippet-box">
+						<h4 class="center-align">RegEx</h4>
+						<p class="flow-text center-align">
+							Quick Regular Expressions matching using Ruby's match method.
+						</p>
+					</div>
+					<div class="col s6	 valign" id="snippet-box">
+						<pre class="card-panel hoverable"><code class="language-ruby">str = &quot;I will drill for a well in Hull.&quot;
+regex = Regexp.new(/\w+ll/)
+
+matchdata = regex.match(str)
+while matchdata != nil
+  puts matchdata[0]
+  str = matchdata.post_match
+  matchdata = regex.match(str)
+end</code></pre>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row " id="cards">
+					<div class="col s12 m4 " id="box2">
+						<div class="card hoverable">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="images/vision.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">My Vision <i class="material-icons">visibility</i><i class="material-icons right">more_vert</i></span>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">My Vision<i class="material-icons right">close</i></span>
+								<p class="flow-text"> <strong>WORK HARDER, BE BRAVE:</strong> Always trying to work out new ideas that's how I further my knownledge.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m4 " id="box2">
+						<div class="card hoverable">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="images/strategy.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">My Mission <i class="material-icons">business_center</i><i class="material-icons right">more_vert</i></span>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">My Mission<i class="material-icons right">close</i></span>
+								<p class="flow-text"><strong>WITHOUT A GOAL YOU CAN'T SCORE:</strong> with a 'can do' attitude my goal is to make people-friendly and timeless products.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col s12 m4" id="box2">
+						<div class="card hoverable">
+							<div class="card-image waves-effect waves-block waves-light">
+								<img class="activator" src="images/idea.jpg">
+							</div>
+							<div class="card-content">
+								<span class="card-title activator grey-text text-darken-4">My Idea <i class="material-icons">lightbulb_outline</i><i class="material-icons right">more_vert</i></span>
+							</div>
+							<div class="card-reveal">
+								<span class="card-title grey-text text-darken-4">My Idea<i class="material-icons right">close</i></span>
+								<p class="flow-text"> <strong>THE BIGGEST RISK IS TO TAKE NO RISK AT ALL:</strong> I go the extra mile and make new things, better than requested.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row valign-wrapper" id="title">
+					<div class="col s12 m6 offset-m3 valign scrollspy" id="project">
+						<h3 class="center-align">My Projects <i class="material-icons " >assignment_turned_in</i></h3>
+						<hr class="divide">
+					</div>
+				</div>
+				<div class="row" id="projects">
+					<div class="col s12 m6">
+						<div class="card sticky-action hoverable deep-purple lighten-2">
+              <div class="card-image waves-effect waves-block waves-purple">
+                <img class="activator" src="images/splurty.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator white-text ">Quote Generator<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text  deep-purple lighten-1">
+                <span class="card-title ">Quote Generator<i class="material-icons right">close</i></span>
+                <p class="flow-text"> A database-powered quote generator with a mobile-first
+                          design, using the Ruby on Rails framework, HTML, and CSS.
+                          Uses Git and GitHub for version control, and launched
+                          on Heroku.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+					</div>
+					<div class="col s12 m6">
+						<div class="card sticky-action hoverable green lighten-2">
+              <div class="card-image waves-effect waves-block waves-green">
+                <img class="activator" src="images/nomster.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator white-text">Yelp Clone<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text  green lighten-2">
+                <span class="card-title ">Yelp Clone<i class="material-icons right">close</i></span>
+                <p class="flow-text"> A Yelp clone that integrates with the Google Maps API 
+                and includes features like user comments, star ratings,
+                image uploading, and user authentication.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+					</div>
+				</div>
+				<div class="row" id="projects">
+					<div class="col s12 m6">
+						<div class="card sticky-action hoverable teal lighten-2">
+              <div class="card-image waves-effect waves-block waves-teal">
+                <img class="activator" src="images/todoster.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator white-text">Single Page Todo Application<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text teal lighten-1">
+                <span class="card-title ">Single Page Todo Application<i class="material-icons right">close</i></span>
+                <p class="flow-text"> This single-page to-do application features a
+                fluid user interface that– by using  AngularJS–
+                allows users to rapidly add dynamic content.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+					</div>
+					<div class="col s12 m6">
+						<div class="card sticky-action hoverable deep-orange lighten-1">
+              <div class="card-image waves-effect waves-block waves-red">
+                <img class="activator" src="images/grammable.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator white-text">Test Driven Development<i class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-reveal white-text deep-orange lighten-1">
+                <span class="card-title ">Test Driven Development<i class="material-icons right">close</i></span>
+                <p class="flow-text"> An Instagram clone that was built using industry-standard, test-driven
+                development following numerous red/green/refactor cycles.</p>
+              </div>
+                <div class="card-action">
+                <a href="#"><i class="material-icons left">link</i></a>
+                  
+                </div>
+              </div>
+					</div>
+				</div>
+			    <div class="row hide-on-med-and-down">
+			      <div class="parallax-container">
+			        <div class="parallax"><img src="images/parallax.jpg"></div>
+			      </div>
+			    </div>
+			    <div class="divider hide-on-med-and-up"></div>
+			    <div class="row valign-wrapper" id="title">
+					<div class="col s12 m6 offset-m3 valign">
+						<h3 class="center-align">My Instagram <i class="material-icons " >camera_enhance</i></h3>
+						<hr class="divide">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12">
+						<div  class="carousel" id="carousel" >
+	   
+	     				</div>
+					</div>
+				</div>
+				<div class="divider"></div>
+				<div class="row valign-wrapper" id="title">
+					<div class="col s12 m6 offset-m3 valign">
+						<h3 class="center-align">Skills &amp; Toolbox <i class="material-icons " >build</i></h3>
+						<p class="center-align">
+							I developed proficiency and expertise in the following programming languages and comfort with the following tools.
+						</p>
+						<hr class="divide">
+					</div>
+				</div>
+				<div class="row" id="skills">
+						<div class="col s4 m2" id="skill-logo"> <a href="#!"><img src="images/rails.png"  alt="" class="responsive-img grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="Ruby On Rails"></a>
+               
+            			</div>
+            			<div class="col s4 m2" id="skill-logo">
+            			<a href="#!"><img src="images/node.png"  alt="" class="responsive-img grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="NodeJS"> </a>
+              
+            			</div>
+            			<div class="col s4 m2" id="skill-logo">
+            			<a href="#!"><img src="images/js.png"  alt="" class="responsive-img grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="JavaScript"> </a>
+              
+            			</div>
+            			<div class="col s4 m2" id="skill-logo">
+            			<a href=""><img src="images/ruby.png"  alt="" class="responsive-img grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="Ruby"> </a>
+              
+            			</div>
+            			<div class="col s4 m2" id="skill-logo">
+            			<a href=""><img src="images/git.png"  alt="" class="responsive-img grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="Git"> </a>
+              
+            			</div>
+            			<div class="col s4 m2" id="skill-logo">
+            			<a href="#!"> <img src="images/angular.png"  alt="" class="responsive-img grayscale grayscale-fade tooltipped" data-position="top" data-delay="50" data-tooltip="AngularJS"> </a>
+             
+            			</div>
+				</div>
+				
+				<div class="divider"></div>
+				<div class="row" id="tools">
+					<div class="col s12 m3" id="tool">
+						<div class="card hoverable">
+				          <div class="card-image waves-effect waves-block ">
+				            <img class="activator" src="images/web.jpg">
+				          </div>
+        				</div> 
+					</div>
+					<div class="col s12 m3" id="tool">
+						<div class="card hoverable">
+				          <div class="card-image waves-effect waves-block ">
+				            <img class="activator" src="images/app.jpg">
+				          </div>
+        				</div> 
+					</div>
+					<div class="col s12 m3" id="tool">
+						<div class="card hoverable">
+				          <div class="card-image waves-effect waves-block ">
+				            <img class="activator" src="images/design.jpg">
+				          </div>
+        				</div> 
+					</div>
+					<div class="col s12 m3" id="tool">
+						<div class="card hoverable">
+				          <div class="card-image waves-effect waves-block ">
+				            <img class="activator" src="images/program.jpg">
+				          </div>
+        				</div> 
+					</div>
+				</div>
+				<footer class="page-footer">
+          <div class="container">
+            <div class="row ">
+              <div class="col s12 m6 offset-m3 scrollspy" id="contact">
+                <h3 class="white-text center">Say Hello! <i class="material-icons">message</i></h3>
+                <p class="grey-text text-lighten-4">I'm very social and I'd love to hear from you! Feel free to send me an email, find me on Linkedin or join me on Facebook. I'm Currently entertaining new opportunities. Please get in touch with me:</p>
+              </div>
+            </div>
+            <div class="row">
+            	<div class="col s12 m6 offset-m3">
+            		<p id="trigger" class="flow-text white-text center" ><strong id="email"> bourhilr@gmail.com</strong> <a href="#!" ><i class="material-icons">content_copy</i></a></p>
+            	</div>
+            </div>
+            
+            	<div class="row" id="skills ">
+						<div class="col s4 m2 center" id="skill-logo"><a href="" target="_blank"><img src="images/fire.png"  alt="" class=" tooltipped" data-position="top" data-delay="50" data-tooltip="FreeCodeCamp"></a>
+               
+            			</div>
+            			<div class="col s4 m2 center" id="skill-logo">
+            			<a href="http://fb.com/xde013" target="_blank">
+            				<img src="images/facebook.png"  alt="" class=" tooltipped" data-position="top" data-delay="50" data-tooltip="Facebook">
+            			</a>
+               
+            			</div>
+            			<div class="col s4 m2 center" id="skill-logo"> 
+            			<a href="https://instagram.com/ryanemo" target="_blank">
+            				<img src="images/instagram.png"  alt="" class="  tooltipped" data-position="top" data-delay="50" data-tooltip="Instagram">
+            			</a>
+               
+            			</div>
+            			<div class="col s4 m2 center" id="skill-logo">
+            			<a href="#!" target="_blank">
+            				 <img src="images/github-circle.png"  alt="" class="  tooltipped" data-position="top" data-delay="50" data-tooltip="Github"> 
+            			</a>
+             
+            			</div>
+            			<div class="col s4 m2 center" id="skill-logo">
+            			<a href="#!" target="_blank">
+            				<img src="images/linkedin.png"  alt="" class="  tooltipped" data-position="top" data-delay="50" data-tooltip="Linkedin">
+            			</a>
+               
+            			</div>
+            			<div class="col s4 m2 center" id="skill-logo">
+            			<a href="#!" target="_blank"><img src="images/medium.png"  alt="" class="responsive-img  tooltipped" data-position="top" data-delay="50" data-tooltip="Medium"></a>
+               
+            			</div>
+				</div>
+            
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            Copyright © 2016. All rights reserved.
+            <a class="grey-text text-lighten-4 right" href="#!">Made by Ryan Bourhil</a>
+            </div>
+          </div>
+        </footer>
+
+				
+
+			</body>
+			<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/prism.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-ruby.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+			<script src="test.js"></script>
+		</html>
