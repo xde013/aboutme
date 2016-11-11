@@ -1,11 +1,9 @@
-jQuery(document).ready(function($) {
-  var feed = new Instafeed({
+var feed = new Instafeed({
         get: 'user',
         userId: '346102260',
         accessToken: '346102260.1677ed0.637fa12e6936404c8816a3585aaa075d',
         useHttp: 'true',
         target: 'carousel',
-        sortBy: 'most-liked',
         limit: 8,
         template: '<a class="carousel-item" ><img src="{{image}}" /></a>',
         after: function () {
@@ -15,13 +13,15 @@ jQuery(document).ready(function($) {
         }
     });
     feed.run();   
+jQuery(document).ready(function($) {
+  
   $(".sub").typed({
-        strings: [" an IT student..", "a web developer!", "an Android guy..", "a cool kid?", "a saiyan!", "a photographer.."],
+        strings: [" an IT student..", "a web developer.", "an Android guy..", "a cool kid?", "a saiyan!", "a photographer.."],
         typeSpeed: 30,
         backSpeed: 50,
         backDelay: 1500,
         loop: true,
-        startDelay: 1000,
+        startDelay: 800,
         shuffle: true,
   });
 
