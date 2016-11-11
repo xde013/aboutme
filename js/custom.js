@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
     });
     feed.run();   
   $(".sub").typed({
-        strings: [" an IT student..", "a web developer..", "an Android guy..", "a cool kid?", "a saiyan!", "a photographer.."],
+        strings: [" an IT student..", "a web developer!", "an Android guy..", "a cool kid?", "a saiyan!", "a photographer.."],
         typeSpeed: 30,
         backSpeed: 50,
         backDelay: 1500,
