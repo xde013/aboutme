@@ -64,8 +64,14 @@
             <hr class="divide" >
           </div>
         </div>
-        <div class="row valign-wrapper" id="snippet">
-          <div class="col s6  valign" id="snippet-box">
+        <div class="row " id="snippet">
+        <div class="col s12 m6 valign hide-on-med-and-up" id="snippet-box">
+            <h4 class="center-align">FooBar</h4>
+            <p class="flow-text center-align">
+              This Ruby program is an adaptation of a classic technical job interview problem which displays sequences of the Foobar pattern.
+            </p>
+          </div>
+          <div class="col s12 m6  valign " id="snippet-box">
             <pre class="card-panel hoverable"><code class="language-ruby ">def foobar n
    (1..n).each do |i|
       x = ''
@@ -75,7 +81,7 @@
    end
 end</code></pre>
           </div>
-          <div class="col s6 valign" id="snippet-box">
+          <div class="col s12 m6 valign hide-on-small-only" id="snippet-box">
             <h4 class="center-align">FooBar</h4>
             <p class="flow-text center-align">
               This Ruby program is an adaptation of a classic technical job interview problem which displays sequences of the Foobar pattern.
@@ -83,22 +89,29 @@ end</code></pre>
           </div>
         </div>
         <div class="divider"></div>
-        <div class="row valign-wrapper" id="snippet">
-          <div class="col s6 valign" id="snippet-box">
+        <div class="row " id="snippet">
+          <div class="col s12 m6 valign" id="snippet-box">
             <h4 class="center-align">Fibonnaci Algorithm</h4>
             <p class="flow-text center-align">
               Fibonacci numbers are the numbers in the following integer sequence, called the Fibonacci sequence, and characterized by the fact that every number after the first two is the sum of the two preceding ones.
             </p>
           </div>
-          <div class="col s6   valign" id="snippet-box">
-            <pre class="card-panel hoverable"><code class="language-ruby">def fibonacci(n)
+          
+          <div class="col s12 m6  valign" id="snippet-box">
+            <pre class="card-panel hoverable "><code class="language-ruby">def fibonacci(n)
    n &lt;= 1 ? n :  fibonacci( n - 1 ) + fibonacci( n - 2 ) 
 end</code></pre>
           </div>
         </div>
         <div class="divider"></div>
-        <div class="row valign-wrapper" id="snippet">
-          <div class="col s6 valign" id="snippet-box">
+        <div class="row " id="snippet">
+        <div class="col s12 m6 valign hide-on-med-and-up" id="snippet-box">
+            <h4 class="center-align">Orbital Periods</h4>
+            <p class="flow-text center-align">
+              This JavaScript program will return a new array that transforms the element's average altitude into their orbital periods knowing that the body being orbited here is Earth.
+            </p>
+          </div>
+          <div class="col s12 m6 valign" id="snippet-box">
             <pre class="card-panel hoverable"><code class="language-javascript">function orbitalPeriod(objects) {
   const GM = 398600.4418;
   const earthRadius = 6367.4447;
@@ -113,7 +126,7 @@ end</code></pre>
 
 orbitalPeriod([{name: &quot;ISS&quot;, avgAlt: 413.6}]) =&gt; [{name: 'ISS', orbitalPeriod: 5557 }]</code></pre>
           </div>
-          <div class="col s6 valign" id="snippet-box">
+          <div class="col s12 m6 valign hide-on-small-only" id="snippet-box">
             <h4 class="center-align">Orbital Periods</h4>
             <p class="flow-text center-align">
               This JavaScript program will return a new array that transforms the element's average altitude into their orbital periods knowing that the body being orbited here is Earth.
@@ -121,14 +134,14 @@ orbitalPeriod([{name: &quot;ISS&quot;, avgAlt: 413.6}]) =&gt; [{name: 'ISS', orb
           </div>
         </div>
         <div class="divider"></div>
-        <div class="row valign-wrapper" id="snippet">
-          <div class="col s6 valign" id="snippet-box">
+        <div class="row " id="snippet">
+          <div class="col s12 m6 valign" id="snippet-box">
             <h4 class="center-align">RegEx</h4>
             <p class="flow-text center-align">
               Quick Regular Expressions matching using Ruby's match method.
             </p>
           </div>
-          <div class="col s6   valign" id="snippet-box">
+          <div class="col s12 m6  valign" id="snippet-box">
             <pre class="card-panel hoverable"><code class="language-ruby">str = &quot;I will drill for a well in Hull.&quot;
 regex = Regexp.new(/\w+ll/)
 
@@ -277,8 +290,11 @@ end</code></pre>
           </div>
         </div>
           <div class="row hide-on-med-and-down">
-            <div class="parallax-container">
+            <div class="parallax-container center-align">
               <div class="parallax"><img src="images/parallax.jpg"></div>
+              
+                
+             
             </div>
           </div>
           <div class="divider hide-on-med-and-up"></div>
