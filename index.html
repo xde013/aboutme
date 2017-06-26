@@ -21,20 +21,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
       
       <style>
-        #about{height:100%;width:100%;text-align:center;padding:5%;background-color:#935d8c;color:rgba(255,255,255,0.65);background-image:url(images/overlay.png),linear-gradient(to top,#ee6e73 15%,#9c27b0 85%);margin-bottom:0}h1{font-size:3.8em}.circle.me{border:solid .3em rgba(255,255,255,0.2);height:10em}#box2{padding:4%}#cards{padding-left:8%;padding-right:8%}.fix{position:fixed;top:0;z-index:10000}.typed-cursor{opacity:1;animation:blink .7s infinite}@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@-webkit-keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@-moz-keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}hr.divide{margin-top:4%;width:20%;border:0;box-shadow:inset 0 10px 20px -14px #6738ff;height:10px}#title{padding:4%}#snippet{padding:4%}#snippet-box{padding-left:2%;padding-right:2%}#projects{padding-right:8%;padding-left:8%}div.parallax-container{position:relative;overflow:hidden;height:300px;margin-top:6%}#skills{padding-left:8%;padding-right:8%}#skill-logo{padding:2%}#tools{padding:8%}#tool{padding:2%}
+        #about{height: 100%; width: 100%;text-align:center;background-color:#935d8c;color:rgba(255,255,255,0.65);background-image:url(images/overlay.png),linear-gradient(to top,#ee6e73 15%,#9c27b0 85%);margin-bottom:0;}h1{font-size:3.8em}.circle.me{border:solid .3em rgba(255,255,255,0.2);height:10em}#box2{padding:4%}#cards{padding-left:8%;padding-right:8%}.fix{position:fixed;top:0;z-index:5}.typed-cursor{opacity:1;animation:blink .7s infinite}@keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@-webkit-keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@-moz-keyframes blink{0%{opacity:1}50%{opacity:0}100%{opacity:1}}hr.divide{margin-top:4%;width:20%;border:0;box-shadow:inset 0 10px 20px -14px #6738ff;height:10px}#title{padding:4%}#snippet{padding:4%}#snippet-box{padding-left:2%;padding-right:2%}#projects{padding-right:8%;padding-left:8%}div.parallax-container{position:relative;overflow:hidden;height:300px;margin-top:6%}#skills{padding-left:8%;padding-right:8%}#skill-logo{padding:2%}#tools{padding:8%}#tool{padding:2%}#particles{z-index: 0;position: absolute; }#coolstuff{z-index: 1; padding: 5%;}
       </style>  
-
     </head>
     <body>
       <div class="row valign-wrapper scrollspy" id="about">
-        <div class="col s12 m6 offset-m3 valign" >
+          <div class="col s12" id="particles"></div>
+          <div class="col s12 m6 valign offset-m3" id="coolstuff">
+          
           <img class="circle me" src="images/me.jpg" >
           <h1 >Ryan Bourhil</h1>
           <h4 >I'm <span class="sub"></span></h4>
-          <p>
-            I enjoy working on new technologies and create interesting stuff that matters, I've been coding for while now focusing mainly on frontend developpement and hybrid mobile app developpement. I'm an amateur guitarist and a ferocious runner in the sparetime, I also like to gaze at the milky way at night.
+          <p >
+            I enjoy working on new technologies and create interesting stuff that matters, I've been coding for while now focusing mainly on frontend developpement and hybrid mobile app developpement. I'm an amateur guitarist and a ferocious runner in the sparetime, <br> I also like to gaze at the milky way at night.
           </p>
         </div>
+  
       </div>
       <div id="sticky-anchor"></div>
       
@@ -487,5 +489,7 @@ end</code></pre>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.1/components/prism-ruby.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="js/cool.js" type="text/javascript" charset="utf-8"></script>
       <script src="js/custom.min.js"></script>
     </html>
