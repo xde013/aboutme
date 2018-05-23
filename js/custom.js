@@ -1,18 +1,3 @@
-var feed = new Instafeed({
-        get: 'user',
-        userId: '346102260',
-        accessToken: '346102260.1677ed0.637fa12e6936404c8816a3585aaa075d',
-        useHttp: 'true',
-        target: 'carousel',
-        limit: 8,
-        template: '<a class="carousel-item" ><img src="{{image}}" /></a>',
-        after: function () {
-          $('.carousel').carousel({
-            dist: '50'
-          });
-        }
-    });
-    feed.run();   
 jQuery(document).ready(function($) {
   
   $(".sub").typed({
